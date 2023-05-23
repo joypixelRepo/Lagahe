@@ -37,9 +37,10 @@
           </div>
         <?php } 
         } else { ?>
-          <div class="col-12">No hay peliculas para mostrar</div>
+          <div class="col-12">No hay peliculas para mostrar con los filtros establecidos.</div>
         <?php } ?>
       </div>
+      <?php if($films > 0) { ?>
       <div class="row">
         <div class="col-12">
           <div class="text-center btn-view-more">
@@ -47,6 +48,7 @@
           </div>
         </div>
       </div>
+    <?php } ?>
     </div>
   </section>
 </main>

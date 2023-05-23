@@ -303,7 +303,7 @@ a.read-more {
 }
 .modal-content {
   background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgb(22 67 96 / 91%) 0%, rgb(82 159 207 / 95%) 100%);
+  background: linear-gradient(0deg, rgb(0 0 0 / 91%) 0%, rgb(82 159 207 / 95%) 100%);
   border: 0;
 }
 .modal-body {
@@ -311,4 +311,17 @@ a.read-more {
 }
 .modal-body span {
   font-size: 13px;
+}
+.text-date {
+  color: #f6c800;
+  font-weight: 600;
+}
+.modal-backdrop.show {
+  opacity: .8;
+}
+.modal-backdrop {
+  background: #fff;
+}
+.box-dates {
+  text-align: center;
 }

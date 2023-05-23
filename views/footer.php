@@ -65,12 +65,16 @@
           <div class="container">
             <div class="row">
               <div class="col-6">
-                <span>Fecha de inicio</span>
-                <input type="date" id="calendar-start-date">
+                <div class="box-dates">
+                  <span class="text-date">Fecha de inicio</span>
+                  <input type="date" id="calendar-start-date">
+                </div>
               </div>
               <div class="col-6">
-                <span>Fecha de fin</span>
-                <input type="date" id="calendar-end-date">
+                <div class="box-dates">
+                  <span class="text-date">Fecha de fin</span>
+                  <input type="date" id="calendar-end-date">
+                </div>
               </div>
             </div>
           </div>
