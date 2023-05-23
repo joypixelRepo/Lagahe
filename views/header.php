@@ -12,10 +12,12 @@
           <a href="#" class="link">PRÓXIMOS<br>ESTRENOS</a>
 
           <form id="search-films" class="d-flex seeker" action="/Lagahe/view/name" method="POST">
+            <input type="hidden" name="start-date" id="start-date" value="">
+            <input type="hidden" name="end-date" id="end-date" value="">
             <input class="form-control" type="search" placeholder="Buscar película por nombre" name="film-name">
             <div class="seeker-date">
               <span class="seeker-title">Fecha</span>
-              <span class="seeker-choose"><a href="#">Elegir fecha <img src="/Lagahe/assets/images/Arrow_Down.svg"></a></span>
+              <span class="seeker-choose"><a href="#" data-bs-toggle="modal" data-bs-target="#calendarModal">Elegir fecha <img src="/Lagahe/assets/images/Arrow_Down.svg"></a></span>
             </div>
             <div class="seeker-language">
               <span class="seeker-title">Idioma</span>

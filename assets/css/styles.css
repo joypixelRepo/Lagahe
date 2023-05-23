@@ -298,3 +298,17 @@ a.read-more {
 .film-title-search {
   color: #f6c800;
 }
+.modal-header {
+  border-bottom: 0;
+}
+.modal-content {
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgb(22 67 96 / 91%) 0%, rgb(82 159 207 / 95%) 100%);
+  border: 0;
+}
+.modal-body {
+  padding-bottom: 40px;
+}
+.modal-body span {
+  font-size: 13px;
+}
