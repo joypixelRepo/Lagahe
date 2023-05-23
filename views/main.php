@@ -3,11 +3,16 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
+          <?php if(isset($_POST['film-name']) && !empty($_POST['film-name'])) { ?>
+          <h3>Películas que contienen: <span class="film-title-search"><?= $_POST['film-name'] ?></span></h3>
+          <?php } else { ?>
           <h3>Top películas</h3>
+          <?php } ?>
         </div>
       </div>
       <div class="row">
         <?php
+        if($films > 0) {
         foreach ($films as $film) { 
           // format date to spanish
           $date = new DateTime($film['release_date']);
@@ -30,12 +35,15 @@
               <span class="film-languages">Idioma | <span class="original-lang"><?= $film['original_language'] ?></span></span>
             </div>
           </div>
+        <?php } 
+        } else { ?>
+          <div class="col-12">No hay peliculas para mostrar</div>
         <?php } ?>
       </div>
       <div class="row">
         <div class="col-12">
           <div class="text-center btn-view-more">
-            <a href="#">Mostrar más<br><img src="/Lagahe/assets/images/Arrow_Down.svg"></a>
+            <a href="/Lagahe">Mostrar más<br><img src="/Lagahe/assets/images/Arrow_Down.svg"></a>
           </div>
         </div>
       </div>

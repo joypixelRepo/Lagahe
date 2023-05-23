@@ -10,10 +10,20 @@ class View extends ApplicationController {
   public function loadFilms() {
 
     $sql = 'SELECT * FROM films ORDER BY vote_average DESC LIMIT 60';
-    $categories = $this->db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+    $films = $this->db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
-    if($categories) {
-      return $categories;
+    if($films) {
+      return $films;
+    }
+  }
+
+  public function loadFilmsPerName() {
+
+    $sql = 'SELECT * FROM films WHERE title LIKE "%'.$_POST['film-name'].'%" ORDER BY vote_average DESC';
+    $films = $this->db->query($sql)->fetchAll(PDO::FETCH_ASSOC);
+
+    if($films) {
+      return $films;
     }
   }
 

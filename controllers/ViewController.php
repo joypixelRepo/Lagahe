@@ -21,6 +21,16 @@ class ViewController extends ApplicationController {
     die;
   }
 
+  public function name() {
+    parent::render($this->viewUrl.'/head.php', []);
+    parent::render($this->viewUrl.'/header.php', []);
+    parent::render($this->viewUrl.'/main.php', [
+      'films' => $this->view->loadFilmsPerName()
+    ]);
+    parent::render($this->viewUrl.'/footer.php', []);
+    die;
+  }
+
   public function __destruct() {}
 
 }

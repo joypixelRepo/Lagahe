@@ -4,14 +4,14 @@
       <nav class="navbar navbar-expand-lg menu-figma">
         <div class="container">
 
-          <a class="navbar-brand logo" href="#">
+          <a class="navbar-brand logo" href="/Lagahe">
             <img src="/Lagahe/assets/images/Logo.png">
           </a>
 
           <a href="#" class="link active">TOP<br>PELÍCULAS</a>
           <a href="#" class="link">PRÓXIMOS<br>ESTRENOS</a>
 
-          <form class="d-flex seeker" action="/send" method="POST">
+          <form id="search-films" class="d-flex seeker" action="/Lagahe/view/name" method="POST">
             <input class="form-control" type="search" placeholder="Buscar película por nombre" name="film-name">
             <div class="seeker-date">
               <span class="seeker-title">Fecha</span>
@@ -21,7 +21,7 @@
               <span class="seeker-title">Idioma</span>
               <span class="seeker-choose"><a href="#">Elegir idioma <img src="/Lagahe/assets/images/Arrow_Down.svg"></a></span>
             </div>
-            <a class="seeker-button" href="#" type="submit"><img src="/Lagahe/assets/images/Icon_Search-Black.png"></a>
+            <a id="submit-button" class="seeker-button" href="#" type="submit"><img src="/Lagahe/assets/images/Icon_Search-Black.png"></a>
           </form>
 
           <a href="#" class="icon-cart-mobile d-none">
