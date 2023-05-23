@@ -1,0 +1,7 @@
+SetEnvIf Request_URI ^.*$ VIEWS=view
+SetEnvIf Request_URI ^.*$ RAIZ=Lagahe
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.+)\/(.+)(\/)?$ index.php?controller=$1&action=$2 [QSA]

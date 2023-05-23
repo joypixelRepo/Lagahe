@@ -49,8 +49,8 @@ body {
   display: block;
 }
 .film img {
-  width: auto;
-  height: 240px;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 .img-link-film img {
@@ -98,6 +98,11 @@ body {
 }
 .film-languages {
   font-size: 11px;
+}
+.original-lang {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block !important;
 }
 a.link {
   text-decoration: none;
@@ -277,4 +282,13 @@ ul.footer-links li a:hover {
   .icon-user img {
     width: 46px;
   }
+}
+a.read-more {
+  color: #28a0e5;
+  text-decoration: underline;
+}
+.btn-view-more a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
 }
